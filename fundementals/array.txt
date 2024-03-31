@@ -1,0 +1,165 @@
+<!-- php start -->
+<?php 
+
+/*
+اكتر من قيمة لنفس المتغير تخزين
+تخزين اعداد مختلفة وانواع مختلفة 
+arrays container to save data unlimted of same data type 
+
+ممكن استخدام الوظائف بتاعت الارقام مع المصفوفة والسلسة ايضا ده غير خصائص المصفوفة 
+
+indexed $name = [value1,value2]; 
+associted  key => value  
+multidymentinal-matrx [[],[]] row col
+
+
+
+built in function in arrays 
+array_push(arr,var to add)add number in array in last
+array_unshift(arr,var)add number in array in first
+array_pop(arr)delet last onsor in array
+array_shift(arr)delet first onsor in array
+count(arr) number of anaser
+array_reverse(arr) 
+array_unique(arr) return array with out repeate of value 
+array_sum(arr) sum of value
+array_product(arr) multi * of all value 
+unsit(arr) change value for num to null
+end(arr) get last value of arr 
+in_array(what,arr) find value in arr 
+shuffle(arr) repeat sort the value of arr
+array_flip(arr)change value in key and key in vvalue but just alocation
+array_keys(arr); get the keey
+array_values(arr); get the value 
+ 
+*/
+----------------------------------------------------------------
+indexed 
+// array var can hold more than one value at time
+$food = array("banan","orang","apple");
+echo $food[2];
+array_push($food,"aaa");
+print_r($food);
+foreach($food as $i){
+echo "$i <br>";
+}
+--------------------------------------------------------------------
+associted 
+$capitals = array(
+    "khartoum" => "bahri",
+    "omdurman" => "salha",
+    "bahri" => "helat hamad"
+);
+$capitals["khartoum"] = "60 streed";
+$capitals["hagyousif"] = "gadesiaa";
+// $keys = array_keys($capitals);
+$values = array_values($capitals);
+
+foreach($values as $value ){
+    echo "{$value}<br>";
+}
+// foreach($capitals as $key => $value){
+//     echo "{$key} = {$value} <br>";
+// }
+------------------------------------------------------------------
+$x = [10,15,8,77];
+$z = [9,8,7,4,...$x];
+print_r($z);
+دمج او فك مصفوفة في اخرى 
+--------------------------------------------------------------------
+//indexed
+ $food =["orang","apple","banan","banan"];
+//  print_r(array_unique($food));
+//  array_push($food,"omer","al","kk");
+// print_r($food);
+$deg = [10,20,30];
+// shuffle($deg);
+// print_r($deg);
+// echo array_sum($deg);
+// echo array_product($deg);
+// $gender = [true,false];
+// $sale = [1.05,2.144,5.44];
+// $mix = ["ahmed",23,true,2.500];
+// $char = ['a','b','c'];
+// echo $mix;
+// echo $mix[0];echo "<br>";
+// echo $mix[1];echo "<br>";
+// echo $mix[2];echo "<br>";
+// echo $mix[3];echo "<br>";
+// var_dump($mix);
+// var_dump($food);echo "<br>";
+// var_dump($deg);echo "<br>";
+// var_dump($gender);echo "<br>";
+// var_dump($sale);echo "<br>";
+// echo "string array {$food} <br>";
+// echo "int array {$deg} <br>";
+// echo "boolean array {$gender} <br>";
+// echo "float array {$sale} <br>";
+//add new value for var 
+// $food[1]="ali";
+// print_r($food);
+// echo $food;
+// var_dump($food);
+
+
+
+
+/*
+---------------------associted-array------------------------------------
+*/
+$user_data =[
+"user_name" => "ahmed",
+"user_name" => "ahmed",
+"id" => 123,
+"gender" => true,
+"balance" => 14.55,
+
+]; 
+// $boola= in_array(false,$user_data);
+// echo $boola;
+// print_r(array_unique($user_data));
+// array_push($user_data,["omer" => "ali"]);
+// array_unshift($user_data,"kk");
+// array_shift($user_data);
+// array_pop($user_data);
+// print_r($user_data);
+// echo $user_data ["user_name"];
+// echo $user_data ["id"];
+// echo $user_data ["gender"];
+// echo $user_data ["balance"];
+
+/*
+---------------------multidymentinal-matrx-array------------------------------------
+*/
+ $arr =[[1,2,3,1,3] , [1,5,4,4,4]];
+shuffle($arr);
+print_r($arr);
+//  $bool= in_array(1,$arr[0]);
+//  echo $bool;
+//  print_r( end($arr));
+//  unset($arr[0]);
+//  print_r($arr[0]);
+//  echo array_sum($arr[0]);
+//  array_push($arr[0],44);
+// print_r($arr[0][3]);
+// array_unshift($arr,8,9,7);
+// array_shift($arr);
+// array_shift($arr);
+// array_shift($arr);
+// echo count($arr);
+// print_r(array_reverse($arr));
+//  $i=array_unique($arr[1]);
+//  $i=array_unique($arr[0]);
+// print_r($i) ;
+
+// array_pop($arr);
+// print_r($arr);
+// echo $arr[0][3];
+// echo $arr[0][1];
+// echo $arr[1][0];
+// print_r($arr) ;
+
+
+
+?>
+<!-- php end  -->

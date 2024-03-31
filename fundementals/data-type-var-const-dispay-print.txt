@@ -1,0 +1,56 @@
+<!-- php start -->
+<?php 
+//data type string number int float bollean null 
+//var
+// string 
+$frist_name = "Ahmed";
+$last_name = " yousif";
+// number int float
+$age = 17;
+$amount = 13.7;
+// boolean true 1 false 0
+$is_online = true;
+// nothing 
+$languge_talke = null ;
+
+// constant 
+const name = "ali";
+var_dump(name); 
+
+define("eyes_color","black");
+
+//  display  print  print-r object array fun struc  
+print("your name is : $frist_name  $last_name" );print("<br>");
+print("your age is : $age" );print("<br>");
+print("your amount is :" . $amount);print("<br>");
+print("you are online :" . $is_online);print("<br>");
+echo("languge you talke :" . $languge_talke);print("<br>");
+echo("eyes color is :" . eyes_color);
+
+// print arrays 
+print("<br>");
+print_r([10,20,30,40,50]);
+
+
+// display iformation of var
+var_dump(eyes_color);
+var_dump($is_online);
+?>
+<!-- php end  -->
+<!-- html start -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- include php inside html -->
+    <title><?php echo($frist_name ." home page ");?></title>
+</head>
+<body>
+    <!-- new line -->
+    <?php
+
+    ?>
+</body>
+</html>
+    <!-- html end -->

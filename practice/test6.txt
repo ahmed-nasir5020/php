@@ -1,0 +1,38 @@
+<!-- php start -->
+<?php 
+
+
+#create function 
+# var const condition operator loop array casting  
+
+//void 
+function print_info(array ...$arr){
+foreach($arr as $i){
+print_r($i). "<br>";
+}
+}
+//return int float bool array 
+function sum(array ...$student){
+    $l = [];
+        foreach($student as $i){
+        $l +=$i;
+        }return $l;
+}
+
+$student = array("ahmed","ali","osman");
+$ages = [1,2,3];
+$gender =[true,false];
+$item = [
+    "name" => "coca",
+    "price" => 20.4,
+    "quant" => 2500,
+    "in_market" => true
+];
+#calling function 
+print_info($ages);
+echo "<br>";
+print_r(sum($student));
+
+
+?>
+<!-- php end  -->

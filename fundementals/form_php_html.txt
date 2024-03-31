@@ -1,0 +1,54 @@
+<!-- php start -->
+<?php 
+/* 
+forme control spical var use to send data from html to php file 
+in action attribute of form to method to hide or public data  
+get send in url no secure char limted beter for serch page 
+post send in body http\s more secure no limte data beter for submit credentials
+
+*/
+// echo "{$_GET["user_name"]} <br>";
+// echo  "{$_GET["password"]} <br>";
+// echo $_GET["user_name"] . "<br>";
+// echo  $_GET["password"]. "<br>";
+
+// var_dump ($_GET);
+// echo "{$_POST["user_name"]} <br>";
+// echo  "{$_POST["password"]} <br>";
+
+
+$qut = $_POST["الكمية"];
+$food = "pizaa";
+$price = 5;
+$total = $qut * $price; 
+echo "you havr order {$qut} x {$food} <br> your total is {$total} ";
+
+?>
+<!-- php end  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?php ?></title>
+</head>
+<body>
+    <form action="index.php" method="post">
+        <label for="الكمية">الكمية</label><br>
+        <input type="الكمية" name="الكمية" id="الكمية"><br>
+        <input type="submit" value="submit">
+    </form>
+    <!-- <form action="index.php" method="post">
+        <label for="user_name">user_name</label><br>
+        <input type="text" name="user_name" id="user_name"><br>
+        <label for="password">password</label><br>
+        <input type="password" name="password" id="password"><br>
+        <input type="submit" value="submit">
+    </form> -->
+<?php 
+
+?>    
+
+
+</body>
+</html>

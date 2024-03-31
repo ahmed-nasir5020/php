@@ -1,0 +1,104 @@
+<!-- php start -->
+<?php
+// list form input select option table
+$food = array("banan","orang","apple");
+$numbers =[[1,2,3,7,6] , [8,5,4,9,0]];
+$capitals = array(
+    "khartoum" => "bahri",
+    "omdurman" => "salha",
+    "bahri" => "helat hamad"
+);
+
+
+-----------------------------------------------------------
+echo "<ul>";
+for ($i=0; $i < count($food); $i++) { 
+    echo "<li>$food[$i]</li>";
+}
+echo "</ul>";
+echo "<br><br><br>";
+
+
+echo "<tr>";
+for ($i=0; $i <count($food); $i++) {
+    for ($j=0; $j <count($food); $j++){
+        echo "<td>$food[$i]</td>";
+
+    }echo "<br>";
+}
+echo "</tr>";
+echo "<br><br><br>";
+
+echo "<select>";
+for ($i=0; $i < count($food); $i++) { 
+    echo "<option>$food[$i]</option>";
+}
+echo "</select>";
+echo "<br><br><br>";
+-----------------------------------------------------------------
+
+echo "<ul>";
+for ($i=0; $i < count($numbers); $i++) { 
+        echo "<li>";
+        print_r ($numbers[$i]);
+        echo "</li>";
+}
+echo "</ul>";
+echo "<br><br><br>";
+
+
+echo "<tr>";
+for ($i=0; $i <count($numbers); $i++) {
+        echo "<td>";
+        print_r ($numbers[$i]);
+        echo "</td>";
+    echo "<br>";
+}
+echo "</tr>";
+echo "<br><br><br>";
+
+echo "<select>";
+for ($i=0; $i < count($numbers); $i++) { 
+    echo "<option>";
+    print_r ($numbers[$i]);
+    echo "</option>";
+echo "<br>";
+}
+echo "</select>";
+echo "<br><br><br>";
+----------------------------------------------------------------------
+
+
+echo "<ul>";
+foreach ($capitals as $k => $v) { 
+        echo "<li>";
+        print_r ($k . "=>" . $v);
+        echo "</li>";
+}
+echo "</ul>";
+echo "<br><br><br>";
+
+
+echo "<tr>";
+foreach ($capitals as $k => $v) { 
+    echo "<td>";
+    print_r ($k . "=>" . $v ."<br>");
+    echo "</td>";
+}
+echo "</tr>";
+echo "<br><br><br>";
+
+echo "<select>";
+foreach ($capitals as $k => $v) { 
+    echo "<option>";
+    print_r ($k . "=>" . $v ."<br>");
+    echo "</option>";
+
+echo "<br>";
+}
+echo "</select>";
+echo "<br><br><br>";
+---------------------------------------------------------------------
+?>
+<!-- php end  -->
+

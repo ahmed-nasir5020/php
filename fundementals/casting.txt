@@ -1,0 +1,15 @@
+<!-- php start -->
+<?php 
+
+/* 
+casting 
+(typecast)var
+
+*/
+$number = 10.5;
+echo((int)$number); print("<br>");
+$num = (boolean)$number;
+var_dump($num);
+
+?>
+<!-- php end  -->

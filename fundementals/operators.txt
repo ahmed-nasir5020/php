@@ -1,0 +1,92 @@
+<!-- php start -->
+<?php 
+/*
+ opertors 
+
+assignment        = من اليمين الى الشمال 
+comparison        > < >= <= == === != <> !==  out bollean 
+logical           and && or || ! XOR
+string            . concat تلصيق 
+bitwise
+arthimetic        + - * / % ** 
+conditional 
+compond            += -= *= /= %= **= 
+
+pre_inc ++x
+post_inc x++
+pre_dec --x
+post_dec x--
+*/
+
+// arthimetic  الرياضية
+echo(3 + 3);print("<br>");
+echo(3 - 3);print("<br>");
+echo(3 * 3);print("<br>");
+echo(3 / 3);print("<br>");
+echo(3 % 3);print("<br>");
+echo(3 ** 3);print("<br>");
+
+// convert التحويل 
+echo(3 + "3");print("<br>");
+echo(3 - "3");print("<br>");
+echo(3 * "3");print("<br>");
+echo(3 / "3");print("<br>");
+echo(3 % "3");print("<br>");
+echo(3 ** "3");print("<br>");
+
+// inc dec الزيادة والنقصان
+$num= 10; $num2 = 11;
+echo($num);print("<br>");
+echo(++$num);print("<br>");
+echo($num++);print("<br>");
+echo($num);print("<br>");
+echo(--$num);print("<br>");
+echo($num--);print("<br>");
+echo($num);print("<br>");
+
+
+// comparison مقارنة 
+echo(var_dump($num < $num2));print("<br>");
+echo(var_dump($num > $num2));print("<br>");
+echo(var_dump($num <= $num2));print("<br>");
+echo(var_dump($num >= $num2));print("<br>");
+echo(var_dump($num == $num2));print("<br>");//value
+echo(var_dump($num === $num2));print("<br>");//value data type
+echo(var_dump($num != $num2));print("<br>");//value
+echo(var_dump($num <> $num2));print("<br>");//value 
+echo(var_dump($num !== $num2));print("<br>");//value data type
+
+echo("111");
+// logical منطقي  
+echo(var_dump($num < $num2 or $num > $num2 ));print("<br>");
+echo(var_dump($num < $num2 and $num > $num2 ));print("<br>");
+echo(var_dump($num < $num2 || $num > $num2 ));print("<br>");
+echo(var_dump($num < $num2 && $num > $num2 ));print("<br>");
+echo(var_dump(!($num > $num2)  ));print("<br>");
+echo(var_dump($num < $num2 XOR $num > $num2 ));print("<br>");
+
+
+<!-- php start -->
+<?php 
+// operator
+$num1 = 10;
+$num2 = 2;
+$num3 = null;
+$total = 1+2-3*4/5**6;
+
+// $num3 = $num1 + $num2;
+// $num3 = $num1 - $num2;
+// $num3 = $num1 * $num2;
+// $num3 = $num1 / $num2;
+// $num3 = $num1 % $num2;
+// $num3 = $num1 **$num2;
+
+// echo "result is {$num3}";
+
+// echo $num1++;
+// echo $num1--;
+
+// echo $total;
+
+?>
+<!-- php end  -->

@@ -1,0 +1,42 @@
+<!-- php start -->
+<?php 
+// string 
+$name = "ahmed nasir";
+$food = "pizaa";
+$email = "an0123@gmail.com";
+// int
+$age = 23;
+$usuers = 2;
+$quantye = 3;
+// float
+$gpa = 2.5;
+$price = 4.99;
+$tax_rate = 5.1;
+// boolean 
+$employed = true;
+$online = false;
+$for_sale = true;
+// nothing
+$total = null;
+
+echo "hello {$name} <br>";
+echo "i like {$food} <br>";
+echo "my email \"{$email}\" <br>";
+
+echo "i am {$age} years old <br>";
+echo "ther are {$usuers} online <br>";
+echo "you want by {$quantye} items <br>";
+
+echo "your gpa is {$gpa} <br>";
+echo "your pizaa is \${$price} <br>";
+echo "the salse tax rate {$tax_rate}% <br>";
+
+echo "online status {$online} <br>";
+echo "item for salse {$for_sale} <br>";
+
+echo "you have orderd {$quantye} pig {$food}s <br>";
+$total = $price * $quantye ; 
+echo "your total is : \${$total} <br>";
+
+?>
+<!-- php end  -->

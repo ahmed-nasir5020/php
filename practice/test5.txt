@@ -1,0 +1,85 @@
+<!-- php start -->
+<?php 
+
+// $num = 321;
+// $rev = 0;
+// for(;$num >0;){
+//     $rev = $num %10;
+//     $num /= 10;
+//     switch ($rev) {
+//         case 1:
+//             echo "one \t";
+//             break;
+//         case 2:
+//             echo "two \t";
+//             break;
+//         case 3:
+//             echo "three \t";
+//             break;
+//         default: echo " ";
+//             break;
+//     }
+// }
+
+// $even=0;$odd=0;
+// $numbers = array(1,2,3,4,5,6,7,8,9);
+// foreach($numbers as $i){
+//     if($i %2==0){
+//         $even++;
+//         echo "even => {$i} <br>";
+//     }else{
+//         $odd++;
+//         echo "odd => {$i} <br>";
+//     }
+// }
+// echo "even number is : {$even} <br>";
+// echo "odd number is : {$odd} <br>";
+// $numbers =[0,1,2,3,4,5,6,7,8,9];   
+// $find = 0;
+// for($i=0;$i< count($numbers);$i++){
+// if($numbers[$i] == $find){
+//     echo "yes i found at ". $i;
+// }
+// else{
+//     echo " <br> no not found";
+// }
+// }
+// foreach($numbers as $i){
+// if($numbers[$i] == $find){
+//     echo "yes i found at ". $i;
+//     break;
+// }
+// }  
+    
+// $numbers =[0,1,2,3,4,5,6,7,8,9];
+// $max=0; $min=0;
+// foreach($numbers as $i){
+//     if($numbers[$i] < $min){
+//        $min = $numbers[$i];
+        
+//     }elseif($numbers[$i] > $max){
+//         $max = $numbers[$i];
+//     }
+// }
+// echo "max : $max <br>";
+// echo "min : $min <br>";
+
+// $numbers =[0,1,2,3,1,5,6,1,8,9];
+// echo array_sum($numbers);
+// $find = 1;
+// $yes=0;
+// foreach($numbers as $i){
+// if($numbers[$i] == $find){
+//   $yes++;
+// }
+// } echo $yes;
+
+$number = [[1,2,3],[4,5,6],[7,8,9]];
+
+print_r( $number );
+
+
+
+
+?>
+<!-- php end  -->

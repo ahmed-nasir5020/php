@@ -1,0 +1,61 @@
+<!-- php start -->
+<?php 
+
+/*------test2  data type        : string int float boolean null------*/
+$first_name = "ahmed ";
+$last_name = "yousif ";
+$check = 'i';
+$age = 30;
+$gender = "male";
+$address = "egypt";
+$is_online = false ;
+$balnce = 17.2;
+$deg_school = 13 ;
+$cash1 = 123 ;
+$cash2 = -3 ;
+$cash3 = 17.5 ;
+$car_balnce = null ;
+$phone = 15.5;
+$averg =( $cash1 +$cash2+$cash3)/3;
+/*----use with function  : number string condition casting operator escap-char--*/
+$active = ($is_online == true) ? "you are active <br>" :"you are  not active <br>";
+echo($active);
+$full_name = $first_name . $last_name;
+echo(" wellcome  : $full_name <br>");
+$sum_of_cash = $cash1 +$cash2+$cash3; 
+echo(" your cash is  : $sum_of_cash <br>");
+if($gender == "male" && $age > 18){
+    echo("you can do it <br>");
+}else{
+    echo("you are not above 18 and not male <br>");
+
+}
+switch($address ){
+    case "sudan": echo("not same zone <br>");break;
+    case "egypt": echo("go to the market <br>");break;
+    default : echo("you need to be in cairo first <br>");break;
+}
+echo("your averge is : $averg <br>");
+    $car_balnce += $cash1 %10;
+    $cash1 /=10;
+    $car_balnce += $cash1 %10;
+    $cash1 /=10;
+    $car_balnce += $cash1 %10;
+    $cash1 /=10;
+
+echo("balance car is : $car_balnce\$ <br>");
+
+if($cash2 < 0){echo("number is neg <br>");}else{echo("number is posit <br>");}
+
+if($deg_school %2==0){echo("number is odd <br>");}else{echo("number is even <br>");}
+
+if($check == 'a' or $check =='o' or $check =='u' or$check == 'i' ||$check == 'e'){
+    echo("is voule ($check)  <br>");
+}else{
+    echo("is not avoule( $check)  <br>");
+}
+echo("max is :". max($cash1,$cash2,$cash3));echo("<br>");
+
+echo("after casting : " . (int)$cash3);echo("<br>");
+?>
+<!-- php end  -->

@@ -1,0 +1,185 @@
+<!-- php start -->
+<?php 
+
+/*
+ conditinal block  to controle program flow validate
+
+ block manye of statment branshing 
+  if(condition){ statment } else { statment } use for range like student
+  nested if(condition){
+    if(condition){
+        statment
+    }else{
+        statment
+    }
+  }else{
+    statment
+}
+ if(condition){ statment } elseif(condition) { statment }else { statment }
+  switch case chek value == var use for destred like color rgp
+  and we can use two cases for out one value
+  switch(var){
+    case value : statment ; breake;
+    case value : statment ; breake;
+    defulte    : statment ; breake;
+  }
+  ternary opertor var = (condition)?statment : statment ; instan if 
+  null coalesing  var = var ?? value ; 
+  use for var have null you need to give defult value
+*/
+/*
+$aver = 92;
+
+if($number > 5){
+    echo("$number : is more than 10 <br>");
+}else{
+    
+    echo("$number : is less than 10 <br>");
+}
+*/
+/* if condition = true will goo out if all condition after true 
+if($aver < 50){
+    echo("$aver : false <br>");
+}elseif($aver >= 50 and $aver <= 60){
+    echo("$aver : passing <br>");
+}elseif($aver >= 70 and $aver <= 80){
+    echo("$aver : good <br>");
+}elseif($aver >= 90 && $aver <= 100){
+    echo("$aver : exland <br>");
+}else{
+    echo("$aver :  <br>");
+}
+*/
+/*
+$age = 18;
+$gender = "male";
+if($age > 17){
+    if($gender == "maler"){
+        echo("yes");
+    }else{
+        echo("can");
+    }
+}else{
+    echo("naa");
+}
+*/
+/*
+$color = "blue";
+switch ($color) {
+    case 'red':
+    case 'blue':
+        echo("color is : $color");
+        break;
+    case 'white':
+        echo("color is : $color");
+        break;
+    case 'black':
+        echo("color is : $color");
+        break;
+    
+    default:
+        echo("wrong color ");
+        break;
+}
+*/
+/*
+$gender = "male";
+$can_do_it =($gender == "male")?"true : you male":"false : this is for male";
+echo($can_do_it );
+*/
+/*
+$number = 10;
+$num = null;
+$num = $number ?? 10;
+echo("$num : $number :");
+*/
+
+
+//if statment 
+// $age = 18;
+// $email = "ah123@gmail.com";
+// $cheak = strpos($email,'@');
+
+// if(!$cheak){
+// echo "not found ";
+// }else{
+//     echo "found";
+// }
+
+// if($age >= 18){
+//     echo "go to side<br>";
+// }else{
+//     echo "your age is not above 18 <br>";
+// }
+
+
+// $temp = 15;
+
+// if($temp >=0 && $temp <=30){
+//     echo "wather is good";
+// }else{
+//     echo "wather is bad";
+// }
+
+// $child = false;
+// $senoir = false;
+// $tiket = null;
+
+// if($child || $senoir){
+// echo $tiket = 10;
+// }else{
+//     echo $tiket = 15;
+
+// }
+
+
+
+<!-- php start -->
+<?php 
+$date = date("l");
+echo $date;
+
+// $time = time();
+// echo $time;
+
+switch ($date) {
+    case 'sunday':
+        echo"sunday";
+        break;
+        case 'monday':
+            echo"monday";
+            break;
+            case 'tuseday':
+                echo"tuseday";
+                break;
+                case 'wednesday':
+                    echo"wednesday";
+                    break;
+                    case 'thrusday':
+                        echo"thrusday";
+                        break;
+                        case 'friday':
+                            echo"friday";
+                            break;
+                            case 'saturday':
+                                echo"saturday";
+                                break;
+                                 
+}
+
+
+
+
+
+
+
+
+
+
+
+?>
+<!-- php end  -->
+
+?>
+<!-- php end  -->
+

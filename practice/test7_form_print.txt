@@ -1,0 +1,95 @@
+<!-- php start -->
+<?php 
+$user_name = $_POST["user_name"];
+$password = $_POST["password"];
+
+echo "user_name =>". $user_name . "<br>";
+echo "user_password =>". $password . "<br>";
+
+--------------------------------------------------
+ $_POST["user_name"."password"."email"];
+
+
+echo "user_name =>". $_POST["user_name"] . "<br>";
+echo "user_password =>". $_POST["password"] . "<br>";
+echo "user_password =>". $_POST["email"] . "<br>";
+------------------------------------------------------
+?>
+<!-- php end  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+</head>
+<body>
+    <div class="continer">
+    <form action="index.php" method="post">
+        <label for="user_name">user_name</label><br>
+        <input type="text" name="user_name" id="user_name"><br>
+        <label for="password">password</label><br>
+        <input type="password" name="password" id="password"><br>
+        <input type="submit" value="login"><br>
+</form>
+    </div>
+    
+</body>
+</html>
+------------------------------------------------------------
+<!-- php start -->
+<?php 
+ $_POST["name"."age"."salary"."is_online"];
+
+
+// echo "user_name =>". $_POST["name"] . "<br>";
+// echo "user_password =>". $_POST["age"] . "<br>";
+// echo "user_password =>". $_POST["salary"] . "<br>";
+// echo "user_password =>". $_POST["is_online"] . "<br>";
+
+
+$students = array(
+"name" => $_POST["name"] ,
+"age" => $_POST["age"],
+"salary" => $_POST["salary"],
+"is_online" => $_POST["is_online"]
+);
+
+
+$class = array(); 
+array_unshift($class,$students);
+
+
+print_r($class);
+// foreach($class as $i ){
+//  echo ($i)  . "<br>";
+// }
+
+?>
+<!-- php end  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+</head>
+<body>
+    <div class="continer">
+    <form action="index.php" method="post">
+    <br><br>
+        <label for="user_name">name</label><br>
+        <input type="text" name="name" id="name"><br>
+        <label for="age">age</label><br>
+        <input type="number" name="age" id="age"><br>
+        <label for="salary">salary</label><br>
+        <input type="number" name="salary" id="salary"><br>
+        <label for="is_online">is_online</label><br>
+        <input type="chr" name="is_online" id="is_online"><br>
+        <br>
+        <input type="submit" value="login"><br>
+</form>
+    </div>
+    
+</body>
+</html>

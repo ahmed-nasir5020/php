@@ -1,0 +1,55 @@
+<!-- php start -->
+<?php 
+
+/*
+math number function 
+abs(var) if number + or - give +
+pow(var,num) var**num 
+sqrt(var) الجزر التربيعي 
+round(var) التقريب الى حسب ماهو قريب فوق او تحت 
+floor(var) التقريب ىالى اسفل 
+ceil(var) التقريب ىالى اعلى 
+max (var,var) max value of number 
+min(var,var) min value of number 
+*/
+
+// var 
+$number = 9.9;
+$num = -5;
+
+// func
+echo(abs($num));print("<br>");
+echo(abs($number));print("<br>");
+echo(pow($number,$num));print("<br>");
+echo(sqrt($number));print("<br>");
+echo(round($number));print("<br>");
+echo(floor($number));print("<br>");
+echo(ceil($number));print("<br>");
+echo(max(10,15,20));print("<br>");
+echo(min(5,2,0));print("<br>");
+
+
+
+
+
+
+
+?>
+<!-- php end  -->
+<!-- html start -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- include php inside html -->
+    <title><?php echo($frist_name ." home page ");?></title>
+</head>
+<body>
+    <!-- new line -->
+    <?php
+
+    ?>
+</body>
+</html>
+    <!-- html end -->

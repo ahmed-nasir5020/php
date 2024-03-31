@@ -1,0 +1,133 @@
+<!-- php start -->
+<?php
+$_POST = ["number_one","number_two","operater"];
+$number_one = $_POST=["number_one"];
+$number_two = $_POST=["number_two"];
+$operater = $_POST=["operater"];
+
+echo $number_one ;
+print_r ($number_one) ;
+// var_dump ($number_one) ;
+
+// function calc($number_one,$number_two,$operater){
+//     $result =null;
+//     if($operater === '+'){
+// $result = $number_one + $number_two;
+
+//     }elseif($operater === '-'){
+//         $result = $number_one - $number_two;
+
+//     }elseif($operater === '*'){
+//         $result = $number_one * $number_two;
+       
+//     }elseif($operater === '/'){
+//         $result = $number_one / $number_two;
+        
+//     }else{
+//         $result = $number_one % $number_two;
+        
+//     }
+//     return $result;
+// }
+
+// function add(){}
+// function sub(){}
+// function mul(){}
+// function mod(){}
+// function div(){}
+
+?>
+<!-- php end  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calclaiter</title>
+</head>
+<body>
+    <form action="index.php" method="post">
+        <div>
+            <label for="number_one">number_one</label>
+            <input type="text" name="number_one" id="number_one"><br><br>
+            <label for="number_two">number_two</label>
+            <input type="text" name="number_two" id="number_two"><br><br>
+            <label for="operater"> (+) </label>
+            <input type="radio" name="operater" id="operater" value="+"><br>
+            <label for="operater"> (-) </label>
+            <input type="radio" name="operater" id="operater" value="-"><br>
+            <label for="operater"> (*) </label>
+            <input type="radio" name="operater" id="operater" value="*"><br>
+            <label for="operater"> (/) </label>
+            <input type="radio" name="operater" id="operater" value="/"><br>
+            <label for="operater"> (%) </label>
+            <input type="radio" name="operater" id="operater" value="%"><br><br>
+            <input type="submit" name="result" id="result" value="result">
+        </div>
+    </form><br><br>
+
+</body>
+</html>
+----------------------------------------------------------------------------------
+<!-- php start -->
+<?php
+
+$_POST = ["number_one","number_two","operater"];
+$number_one = $_POST["number_one"];
+$number_two = $_POST["number_two"];
+$operater = $_POST["operater"];
+
+function calc($number_one,$number_two,$operater){
+    if($operater == '+'){
+    add($number_one,$number_two);
+    }elseif($operater == '-'){
+    sub($number_one,$number_two);
+    }elseif($operater == '*'){
+    mul($number_one,$number_two);
+    }elseif($operater == '/'){
+    mod($number_one,$number_two);
+    }else{
+    div($number_one,$number_two);
+    }
+}
+
+function add($number_one,$number_two){echo ( $number_one + $number_two);}
+function sub($number_one,$number_two){ echo (  $number_one - $number_two);}
+function mul($number_one,$number_two){ echo ( $number_one * $number_two);}
+function mod($number_one,$number_two){  echo  ( $number_one / $number_two);}
+function div($number_one,$number_two){echo  ( $number_one % $number_two);}
+
+// calc($number_one,$number_two,$operater);
+
+?>
+<!-- php end  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calc</title>
+</head>
+<body>
+    <form action="index.php" method="post">
+        <div>
+            <label for="number_one">number_one</label>
+            <input type="text" name="number_one" id="number_one"><br><br>
+            <label for="number_two">number_two</label>
+            <input type="text" name="number_two" id="number_two"><br><br>
+            <label for="operater"> (+) </label>
+            <input type="radio" name="operater" id="operater" value="+"><br>
+            <label for="operater"> (-) </label>
+            <input type="radio" name="operater" id="operater" value="-"><br>
+            <label for="operater"> (*) </label>
+            <input type="radio" name="operater" id="operater" value="*"><br>
+            <label for="operater"> (/) </label>
+            <input type="radio" name="operater" id="operater" value="/"><br>
+            <label for="operater"> (%) </label>
+            <input type="radio" name="operater" id="operater" value="%"><br><br>
+            <input type="submit" name="result" id="result" value="result">
+        </div>
+    </form><br><br>
+</body>
+</html>

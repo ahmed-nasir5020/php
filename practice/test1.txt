@@ -1,0 +1,47 @@
+<!-- php start -->
+<?php 
+
+// var 
+// $num1 = 10;
+// $num2 = 5.4;
+// $num3 = -4;
+// $num4 = 10.9;
+
+// $sum = $num1 + $num2;
+// $max = max($num1,$num2,$num3,$num4);
+// $min = min($num1,$num2,$num3,$num4);
+// echo("number1 : $num1 <br>");
+// echo("sum of number : $sum <br>");
+// echo("aver of number : $aver <br>");
+// echo("max of number : $max <br>");
+// echo("min of number : $min <br>");
+
+
+
+// var string 
+$name = "ahmed nasir elamin yousif ";
+$address = "sudan khartoum gereaf ";
+$car_name = "toyota coraila ";
+
+
+echo("name : $name  <br>");
+echo("address : $address <br>");
+echo("car_he_drive : $car_name <br>");
+// echo( $name . $address);
+$to_capital = ucwords($name);
+echo("capital : $to_capital <br>");
+
+print_r(str_split($car_name,2));
+
+// echo(str_replace("sudan","cairo",$address));echo("<br>");
+// echo(strlen($car_name));echo("<br>");
+// echo(str_word_count($address));echo("<br>");
+
+// $new_name = explode(" ",$name);
+// print_r($new_name);echo("<br><br>");
+
+// echo(implode(" ",$new_name));
+
+
+?>
+<!-- php end  -->

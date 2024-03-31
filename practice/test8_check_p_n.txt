@@ -1,0 +1,63 @@
+<!-- php start -->
+<?php
+ $_POST["user_name"."password"."email"];
+
+ $user_name = "omer";
+ $password = 123;
+ $email = "an20@gmail.com" ;
+
+function check_username($user_name){
+if($_POST["user_name"] ==  $user_name){
+    echo "user_name =>". $user_name . "<br>";
+}else{
+  echo "wrong user_name <br>";
+}
+
+}
+ function check_userpassword($password){
+    if($password == $_POST["password"]){
+        echo "user_password =>". $password . "<br>";
+    }else{
+        echo "wrong user_password <br>";
+    }
+    }
+
+ function check_useremail($email){
+    if($email == $_POST["email"]){
+        echo "user_email =>". $email . "<br>";
+    }else{
+        echo "wrong user_email <br>";
+    }
+    } 
+
+    check_username($user_name);
+    check_userpassword($password);
+    check_useremail($email);
+
+
+
+?>
+<!-- php end  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+</head>
+<body>
+    <div class="continer"><br>
+    <form action="index.php" method="post">
+        <label for="user_name">user_name</label><br>
+        <input type="text" name="user_name" id="user_name"><br>
+        <label for="user_email">user_email</label><br>
+        <input type="text" name="user_email" id="user_email"><br>
+        <label for="password">password</label><br>
+        <input type="password" name="password" id="password"><br><br>
+        <input type="submit" value="login"><br>
+</form>
+    </div>
+    
+</body>
+</html>

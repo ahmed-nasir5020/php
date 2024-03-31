@@ -1,0 +1,86 @@
+<!-- php start -->
+<?php 
+// string "" '' 
+$name = "  <b>  Ahmed  nasir  elamin    </b> ";
+/*
+ built in function for string to procesing 
+
+str_repeat(string,number_rep)
+str_replace(what,that,var)
+lcfirst(var) lower to uper capital to small
+ucfirst(var)   uper to lower  small to capital 
+ucwords(var) all begin word to capital
+ltrim(var) left trem delet space
+rtrim(var) right trem delet space
+trim(var) delet space in left and right
+htmlspicalchars(var) display like <b>home</b> and htmlentities(var)
+htmlspicalchars_decode(var) 
+str_word_count(var) count word
+explode("",var) string to array
+implode("",var) array to string
+strlen(var) number of char
+substr(var,start,length) cut and print string
+strtoupper(var)  small to capital 
+strtolower(var)capital to small
+str_splite(var,numofcuting) تقطع وتضيف في arraye 
+strpos($email,'s') بحث عن كلمة في string 
+
+*/ 
+echo(str_repeat($name,5));print("<br>");
+echo(str_replace("nasir","omer",$name));print("<br>");
+echo(lcfirst($name));print("<br>");
+echo(ucfirst($name));print("<br>");
+echo(ucwords($name));print("<br>");
+echo(ltrim($name));print("<br>");
+echo(rtrim($name));print("<br>");
+echo(htmlentities($name));print("<br>");
+echo(htmlspecialchars_decode($name));print("<br>");
+echo(str_shuffle($name));print("<br>");
+echo(str_word_count($name));print("<br>");
+echo(trim($name));print("<br>");
+$n = explode(" ",$name);print("<br>");
+print_r($n);print("<br>");
+echo(implode(" " ,$n));print("<br>");
+echo(strlen($name));print("<br>");
+echo(substr($name,2,15));print("<br>");
+echo(strtolower($name));
+echo(strtoupper($name));
+
+
+/* 
+escape characters
+\'  print '
+\" print " 
+\n  newline nl2br
+\\ print \
+\t tab 5 spacing 
+
+*/ 
+
+$address = "fisla\ngizaa\nphp";
+$new = nl2br($address);
+echo($new);
+
+
+$name = "ahmed nasir ";
+echo $name[2];
+
+?>
+<!-- php end  -->
+<!-- html start -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- include php inside html -->
+    <title><?php echo($frist_name ." home page ");?></title>
+</head>
+<body>
+    <!-- new line -->
+    <?php
+
+    ?>
+</body>
+</html>
+    <!-- html end -->

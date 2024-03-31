@@ -1,0 +1,29 @@
+// list form input select option table
+
+echo "<ul>";
+for ($i=1; $i < 10; $i++) { 
+    echo "<li>$i</li>";
+}
+echo "</ul>";
+echo "<br><br><br>";
+
+
+echo "<tr>";
+for ($i=1; $i < 10; $i++) {
+    for ($j=1; $j < 10; $j++){
+        echo "<td>$j</td>";
+
+    }echo "<br>";
+}
+echo "</tr>";
+echo "<br><br><br>";
+
+echo "<select>";
+for ($i=1; $i < 10; $i++) { 
+    echo "<option>$i</option>";
+}
+echo "</select>";
+echo "<br><br><br>";
+
+
+

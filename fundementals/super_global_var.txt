@@ -1,0 +1,48 @@
+<!-- php start -->
+<?php
+
+/*
+------------------super_global_variables-----------------------------
+scop for variable in all application we can accsess all thisn array
+get url  data  have quere prameter in url like ?name=value&
+post body  data
+files pdf aduio text data
+request get post all data
+server all data for 1.request 2.client 3.server
+-------------------------globals-------------------------------------
+array have get post cooke files global array key value
+$q=10;
+$globals
+*/ 
+// include "hello.php";
+// print_r($_SERVER["REQUEST_METHOD"]);
+// echo "<br>";
+// print_r($_GET);
+// echo "<br>";
+// print_r($_POST);
+// echo "<br>";
+// print_r($_REQUEST);
+// echo "<br>";
+$q=10;
+print_r($GLOBALS);
+echo "<br>";
+
+?>
+<!-- php end  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calc</title>
+</head>
+<body>
+<!-- <form action="index.php" method="get">
+        <label for="user_name">user_name</label><br>
+        <input type="text" name="user_name" id="user_name"><br>
+        <label for="password">password</label><br>
+        <input type="password" name="password" id="password"><br>
+        <input type="submit" value="login"><br>
+</form> -->
+</body>
+</html>

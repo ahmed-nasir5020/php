@@ -1,0 +1,29 @@
+<?php 
+#--------oop-------------
+/*
+class object 
+attribute method 
+constructer destructer 
+accsess member modfier 
+encapsolation setter geter 
+inherntance extend
+abstruction 
+polymerphism interface implement
+compsion 
+overriding overloading 
+static member method 
+final class and method
+exception handling thro try catch
+template 
+this self
+__call 
+__get
+__set
+chaing method return this استخدامهم مع بعض مثال البنزين المتبقى يسير مسافة كم 
+*/
+
+
+
+
+
+?>

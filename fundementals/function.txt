@@ -1,0 +1,97 @@
+<!-- php start -->
+<?php 
+
+/*
+php is lowsley type 
+user defind function 
+function 
+block of statment can be reused in defurnt way in code 
+run just wen called
+function name (argument){  header or segnecheer 
+    statment 
+
+}
+void echo in statment just name 
+return echo on calling  
+mixed 
+
+atribute can be 
+required (n,b)
+defult using optinal (n=0,b) 
+
+                     0 off 
+declare(strict_types=1); on
+دالة تجبر البعديها بالعمل كمايجب 
+اذا ماكتبته السطر ده حيعمل casting 
+                             :mixed
+                             :void مابترجع حاجة 
+function sum(int $n ,int $s) :int { اجبار القيمة الراجعة من نفس النوع 
+
+}
+اجبر المستخدم ادخال نوع محدد من الداتا تايب 
+علامة الاستفهام قبل النوع تخليه يقبل ال null 
+
+varyaded function 
+functio تستقبل اي عدد من الارقام بس انا مش عارف كم
+function name($var, ...$values){ عبارة عن مصفوفة
+
+    cloger anonimous function
+    for use var out of scop ==== use($var out scop)
+    array_map(function ($element) use ($var){
+    return $element;
+    },$var)
+
+    arrow function short cut for function with out return print one جملة 
+    array_map(fun($element)=>$element*$var) can see outer scoop for anye var
+    
+}
+*/ 
+
+// inshal decler
+function hello($name) :void{
+    echo "<h1>$name</h1>";
+}
+// return
+function sum($a,$b):int{
+    $sum = $a+$b;
+    return $sum;
+}
+//optinal
+function sum2($a,$b=0){
+    $sum = $a+$b;
+    return $sum;
+}
+//requi return type
+// declare(strict_types=0);
+function print_name(string $name) :string{
+return $name;
+}
+// varyaded function 
+function sumNumber($num , ...$values){ //rest operator
+    $sum = $num;
+    foreach($values as $value){
+        $sum += $value;
+    }return $sum;
+}
+// varyaded function call 
+$x = [10,15,8,77];
+// echo sumNumber(110,5,4,8,9,7);
+// unbacking فك مصفوفة كانها بتتباصى عناصر (...$arr) spread operator
+echo sumNumber(110,...$x);
+// calling 
+$my = "ali osam";
+hello($my);
+// call
+echo sum(10.2,4);
+//optinal
+echo sum2(5);
+
+//requi return type string
+// echo print_name("asdfghj");
+
+
+
+
+
+?>
+<!-- php end  -->

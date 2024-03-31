@@ -1,0 +1,69 @@
+<!-- php start -->
+<?php 
+
+// loops 
+
+// for($i = 1;$i <11;$i++){
+// echo $i;
+// }
+// for($i = 10;$i >0;$i--){
+// echo $i;
+// }
+// $n=5;
+// for($i = 1;$i <$n;$i++){
+//      echo $i;
+//     }
+// for($i = $n;$i >0;$i--){
+// echo $i;
+// }
+
+// $num1=1110;
+// $num2=51;
+// $num3=151;
+// $num4=22;
+// $num5=32;
+// $max=null;
+// for($i=1;$i<4;$i++){
+//  if($num1 > $max){
+// $max = $num1;
+//  }elseif($num2 > $max){
+// $max = $num2;
+//  }else{
+//     $max = $num3;
+//  }
+// }echo $max;
+// $aver = null;
+// for($i=0;$i<=5;$i++){
+// $sum=$num1+$num2+$num3+$num4+$num5;
+// }echo $sum;
+// echo $aver=$sum/5;
+// for($i=1;$i<11;$i++){
+// echo  $num1 * $i ;echo "<br>";
+// }
+// for($i=$num2;$i <$num1;$i++){
+//   $sum += $i;
+// }
+// echo $sum;
+// $number1=10; $number2=1;$char = 'f';
+// if($char == '+'){
+//     echo $number1 + $number2;
+// } elseif($char == '-'){echo $number1 - $number2;}elseif($char == '*'){echo $number1 * $number2;}elseif($char == '/'){echo $number1 / $number2;}elseif($char == '%'){echo $number1 % $number2;}else{echo "wrong char";}
+// for($i=$num2;$i >= 1;$i--){
+//    $sum +=$num2 * $i;
+// }  echo $sum ;
+// for($i=1;$i<11;$i++){
+// if($i %2==0){
+//     echo "odd is  $i <br>";
+// }else{
+//     echo "even is  $i <br>";
+
+// }
+// }
+// $name = "ahmed";
+// $sum = null;
+// for($i=0;$i< strlen($name);$i++){
+// $sum++;
+// }echo $sum;
+
+?>
+<!-- php end  -->
